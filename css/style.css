@@ -34,11 +34,11 @@ body{
 
 .bg1{
     height:450px;
-    background-image: url('NewYearWishes/sources/taipei101_3-2.jpg');
+    background-image: url('https://github.com/kenkuo86/NewYearWishes/tree/master/sources/taipei101_3-2.jpg');
 }
 
 .bg2{
-    background-image: url('NewYearWishes/sources/taipei_2.jpg');
+    background-image: url('https://github.com/kenkuo86/NewYearWishes/tree/master/sources/taipei_2.jpg');
 }
 .z-front{
     z-index: 100;
