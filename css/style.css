@@ -34,11 +34,11 @@ body{
 
 .bg1{
     height:450px;
-    background-image: url('C:Users/user/Desktop/NewYearWishes-jimmy/sources/taipei101_3.jpg');
+    background-image: url('C:Users/mins/Desktop/NewYearWishes/NewYearWishes/sources/taipei101_3.jpg');
 }
 
 .bg2{
-    background-image: url('C:Users/user/Desktop/NewYearWishes-jimmy/sources/taipei_2.jpg');
+    background-image: url('C:Users/mins/Desktop/NewYearWishes/NewYearWishes/sources/taipei_2.jpg');
 }
 .z-front{
     z-index: 100;
@@ -142,6 +142,6 @@ body{
     visibility: hidden;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     display: none;
-}
+} */
