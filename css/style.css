@@ -34,7 +34,7 @@ body{
 
 .bg1{
     height:450px;
-    background-image: url('C:Users/mins/Desktop/NewYearWishes/NewYearWishes/sources/taipei101_3.jpg');
+    background-image: url('C:Users/mins/Desktop/NewYearWishes/NewYearWishes/sources/taipei101_3-2.jpg');
 }
 
 .bg2{
@@ -68,7 +68,7 @@ body{
 
 .word span{
     position: absolute;
-    top:270px;
+    top:125px;
     overflow: hidden;
     animation: animate 3s linear;
     opacity: 0;
@@ -142,6 +142,6 @@ body{
     visibility: hidden;
 }
 
-/* body::-webkit-scrollbar {
+body::-webkit-scrollbar {
     display: none;
-} */
+}
