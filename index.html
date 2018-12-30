@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Year Wishes</title>
+    <!-- animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <!-- 自己的style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"></head>
+
+<body>
+
+    <div class = "bg bg1 position-fixed w-100 h100 animated" id="bg1" style="z-index: 100">
+        <div id="y2018" class="animated fadeIn slow">
+            謝謝我的 <br> 2018.
+            <div class="word">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>10</span>
+                <span>11</span>
+                <span>12</span>
+            </div>
+        </div>
+
+        <div id="y2019" class="invisible">多多指教<br>我的2019</div>
+
+        <div id="section03" class="demo invisible">
+            <a><span></span>請往下滑</a>
+        </div>
+    </div>
+
+
+    <div class="bg bg2 position-fixed w-100 h100 slide animated invisible" id="bg2" style="z-index: -1;">
+        <div id="form">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>              
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </div>
+
+ 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            let y2018 = $("#y2018");
+            let y2019 = $("#y2019");
+            let section3 = $('#section03');
+
+            setTimeout(function () {
+                y2018.addClass('flipOutX');
+            }, 7200);
+
+            setTimeout(function () {
+                y2018.addClass('d-none');
+            }, 8600);
+            
+            setTimeout(function(){
+                y2019.addClass('animated fadeIn slow');
+                y2019.removeClass("invisible");
+                section3.addClass('animated fadeIn slow');
+                section3.removeClass("invisible");
+
+            }, 8700);
+        });
+    </script>
+
+    <script>
+        $(function(){
+            $(window).scroll(function(){
+                let scrollTop = $(document).scrollTop();
+                if(scrollTop > 800){
+                    $('#bg1').addClass("fadeOut slow");
+                    $('#bg2').addClass("fadeIn slow");
+                    $('#bg2').removeClass("invisible");
+                };
+            });
+        });
+
+    </script>
+</body>
+
+</html>
