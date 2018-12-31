@@ -34,12 +34,10 @@ body{
 
 .bg1{
     height:450px;
-    /* background-image: url('https://github.com/kenkuo86/NewYearWishes/tree/master/sources/taipei101_3-2.jpg'); */
     background-image: url('sources/taipei101_3-2.jpg');
 }
 
 .bg2{
-    /* background-image: url('https://github.com/kenkuo86/NewYearWishes/tree/master/sources/taipei_2.jpg'); */
     background-image: url('sources/taipei_2.jpg');
 }
 .z-front{
@@ -50,6 +48,10 @@ body{
 }
 .z-bottom{
     z-index: -1;
+}
+
+.scroll_bar{
+    overflow-y:scroll;
 }
 
 
