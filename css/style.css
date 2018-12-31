@@ -34,11 +34,13 @@ body{
 
 .bg1{
     height:450px;
-    background-image: url('https://github.com/kenkuo86/NewYearWishes/tree/master/sources/taipei101_3-2.jpg');
+    /* background-image: url('https://github.com/kenkuo86/NewYearWishes/tree/master/sources/taipei101_3-2.jpg'); */
+    background-image: url('sources/taipei101_3-2.jpg');
 }
 
 .bg2{
-    background-image: url('https://github.com/kenkuo86/NewYearWishes/tree/master/sources/taipei_2.jpg');
+    /* background-image: url('https://github.com/kenkuo86/NewYearWishes/tree/master/sources/taipei_2.jpg'); */
+    background-image: url('sources/taipei_2.jpg');
 }
 .z-front{
     z-index: 100;
@@ -55,6 +57,7 @@ body{
 #y2018, #y2019{
     margin: 0 auto;
     font-size: 100px;
+    vertical-align: middle;
     text-align: center;
     font-family: 'Noto Sans TC', sans-serif;
     width: 100vw;
@@ -68,7 +71,7 @@ body{
 
 .word span{
     position: absolute;
-    top:125px;
+    /* top: 100px; */
     overflow: hidden;
     animation: animate 3s linear;
     opacity: 0;
@@ -253,7 +256,7 @@ body::-webkit-scrollbar {
 
     .word span{
         position: absolute;
-        top:170px;
+        top: 130px;
         overflow: hidden;
         animation: animate 3s linear;
         opacity: 0;
@@ -269,7 +272,7 @@ body::-webkit-scrollbar {
 
     .word span{
         position: absolute;
-        top:190px;
+        top: 130px;
         overflow: hidden;
         animation: animate 3s linear;
         opacity: 0;
