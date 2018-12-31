@@ -39,6 +39,11 @@
         </div>
 
         <div id="y2019" class="invisible">多多指教<br>我的2019</div>
+        
+        <!-- 箭頭 -->
+        <div id="section03" class="demo invisible">
+            <a><span></span>請往下滑</a>
+        </div>
     </div>
 
 
@@ -159,6 +164,7 @@
         $(document).ready(function () {
             let y2018 = $("#y2018");
             let y2019 = $("#y2019");
+            let section3 = $('#section03');
 
             setTimeout(function () {
                 y2018.addClass('flipOutX');
@@ -171,6 +177,8 @@
             setTimeout(function () {
                 y2019.addClass('animated fadeIn slow');
                 y2019.removeClass("invisible");
+                section3.addClass('animated fadeIn slow');
+                section3.removeClass("invisible");
             }, 8700);
         });
     </script>
@@ -179,7 +187,7 @@
         $(function () {
             $(window).scroll(function () {
                 let scrollTop = $(document).scrollTop();
-                if (scrollTop > 1000) {
+                if (scrollTop > 800) {
                     $('#bg1').addClass("fadeOut z-bottom");
                     $('#bg1').removeClass("z-front");
                     $('#bg2').addClass("fadeIn z-middle");
